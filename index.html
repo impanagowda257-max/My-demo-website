@@ -1,72 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NJSP74CKEN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJSP74CKEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-NJSP74CKEN');
-</script>
-    <!-- Google Tag Manager (Recommended – Only GTM kept for tracking) -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5KXJJQNM');
-    </script>
-    <!-- End Google Tag Manager -->
+    // Enable Cross-domain Linking
+    gtag('config', 'G-NJSP74CKEN', {
+      'linker': {
+        'domains': ['impana2507.github.io', 'impanagowda257-max.github.io']
+      }
+    });
+  </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KXJJQNM"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Selling Online Made Easy</h1>
+        <p>Start your online store today with our easy-to-use platform</p>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Selling Online Made Easy</h1>
-                <p>Start your online store today with our easy-to-use platform</p>
-                <button id="explore-btn">Explore More</button>
-            </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/500x400?text=E-commerce+Image" alt="E-commerce Illustration">
-            </div>
-        </div>
-    </section>
+        <!-- This will automatically include &_gl parameter -->
+        <a href="https://impanagowda257-max.github.io/My-demo-website/"
+           target="_blank"
+           class="explore-btn">
+           Explore More
+        </a>
+      </div>
 
-    <section class="white-section">
-        <h2>Welcome to Our Platform</h2>
-        <p>Discover the best tools for your online business.</p>
-    </section>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/500x400?text=E-commerce+Image" alt="E-commerce Illustration">
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>Contact us: Phone: (123) 456-7890 | Email: info@example.com</p>
-    </footer>
+  <section class="white-section">
+    <h2>Welcome to Our Platform</h2>
+    <p>Discover the best tools for your online business.</p>
+  </section>
 
-    <!-- Button Navigation Script -->
-    <script>
-        document.getElementById("explore-btn").onclick = function () {
-            window.location.href = "https://impana2507.github.io/e-commerce-site/";
-        };
-    </script>
+  <footer>
+    <p>Contact us: Phone: (123) 456-7890 | Email: info@example.com</p>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
